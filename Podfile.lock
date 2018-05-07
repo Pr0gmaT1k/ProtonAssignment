@@ -1,0 +1,33 @@
+PODS:
+  - PageMenu (2.0.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - Reusable (3.0.1):
+    - Reusable/Storyboard (= 3.0.1)
+    - Reusable/View (= 3.0.1)
+  - Reusable/Storyboard (3.0.1)
+  - Reusable/View (3.0.1)
+  - SwiftGen (5.2.1)
+  - SwiftLint (0.25.0)
+
+DEPENDENCIES:
+  - PageMenu
+  - RealmSwift
+  - Reusable (~> 3.0.1)
+  - SwiftGen
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  Reusable: 5362d10271ca8316b104698a21e90498f47e8339
+  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+
+PODFILE CHECKSUM: a90fe18fb42e576a5d309d63284b282d0b58c8a3
+
+COCOAPODS: 1.4.0
