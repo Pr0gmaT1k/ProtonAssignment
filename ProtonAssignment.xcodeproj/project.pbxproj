@@ -173,6 +173,7 @@
 			buildConfigurationList = BA8C24E120A0B984000882B8 /* Build configuration list for PBXNativeTarget "ProtonAssignment" */;
 			buildPhases = (
 				C1F2A4F959B679BD71ADFC82 /* [CP] Check Pods Manifest.lock */,
+				BAA92CD020A0BC5800F54870 /* SwiftLint */,
 				BA8C24B520A0B982000882B8 /* Sources */,
 				BA8C24B620A0B982000882B8 /* Frameworks */,
 				BA8C24B720A0B982000882B8 /* Resources */,
@@ -381,6 +382,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BAA92CD020A0BC5800F54870 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		C09AEBB7F83858D9152E943A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
