@@ -17,7 +17,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homework" translatesAutoresizingMaskIntoConstraints="NO" id="MiW-2E-gft">
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7LD-sI-dJj"/>
+                                    <constraint firstAttribute="width" constant="200" id="ErA-bz-3gt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32156282663345337" green="0.31538394093513489" blue="0.38745903968811035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MiW-2E-gft" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="I5u-F1-kAf"/>
+                            <constraint firstItem="MiW-2E-gft" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dQR-47-hPF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -26,4 +39,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="homework" width="313" height="313"/>
+    </resources>
 </document>
