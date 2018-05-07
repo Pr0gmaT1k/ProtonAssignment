@@ -22,6 +22,8 @@
 		BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */; };
 		BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */; };
 		BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF120A0CDB000F54870 /* TaskViewController.swift */; };
+		BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */; };
+		BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
 		BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskViewController.swift; sourceTree = "<group>"; };
 		BAA92CF120A0CDB000F54870 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,12 +198,30 @@
 		BAA92CE420A0BF6000F54870 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BAA92CF420A0D45600F54870 /* Task */,
+				BAA92CF320A0D43F00F54870 /* CompletedTask */,
 				BAA92CE620A0BF6000F54870 /* Main.storyboard */,
 				BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */,
-				BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */,
-				BAA92CF120A0CDB000F54870 /* TaskViewController.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		BAA92CF320A0D43F00F54870 /* CompletedTask */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */,
+			);
+			name = CompletedTask;
+			sourceTree = "<group>";
+		};
+		BAA92CF420A0D45600F54870 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CF120A0CDB000F54870 /* TaskViewController.swift */,
+				BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */,
+				BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 		C45A59893C94ED4A08DC2557 /* Frameworks */ = {
@@ -331,6 +353,7 @@
 				BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */,
 				BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */,
 				BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */,
+				BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +564,7 @@
 			files = (
 				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
 				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
+				BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */,
 				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
 				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
