@@ -29,6 +29,9 @@ struct ColorName {
   let rgbaValue: UInt32
   var color: Color { return Color(named: self) }
 
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#525062"></span>
+  /// Alpha: 100% <br/> (0x525062ff)
+  static let appIconBackGround = ColorName(rgbaValue: 0x525062ff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#c1d6c3"></span>
   /// Alpha: 100% <br/> (0xc1d6c3ff)
   static let green = ColorName(rgbaValue: 0xc1d6c3ff)

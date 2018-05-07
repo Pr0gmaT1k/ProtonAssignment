@@ -11,13 +11,11 @@
 		BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24BC20A0B982000882B8 /* AppDelegate.swift */; };
 		BA8C24D220A0B984000882B8 /* ProtonAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */; };
 		BA8C24DD20A0B984000882B8 /* ProtonAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */; };
-		BAA92CD320A0BDB000F54870 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CD220A0BDB000F54870 /* Colors.txt */; };
 		BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD520A0BEC500F54870 /* Colors.swift */; };
 		BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD620A0BEC500F54870 /* Storyboards.swift */; };
 		BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */; };
 		BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */; };
 		BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDD20A0BF5B00F54870 /* Localizable.strings */; };
-		BAA92CE320A0BF5B00F54870 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDF20A0BF5B00F54870 /* Info.plist */; };
 		BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE520A0BF6000F54870 /* ViewController.swift */; };
 		BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CE620A0BF6000F54870 /* Main.storyboard */; };
 		BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE920A0BFA700F54870 /* Images.swift */; };
@@ -327,8 +325,6 @@
 				BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */,
 				BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */,
 				BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */,
-				BAA92CE320A0BF5B00F54870 /* Info.plist in Resources */,
-				BAA92CD320A0BDB000F54870 /* Colors.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
