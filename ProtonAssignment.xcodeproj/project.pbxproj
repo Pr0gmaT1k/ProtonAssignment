@@ -16,10 +16,12 @@
 		BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */; };
 		BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */; };
 		BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDD20A0BF5B00F54870 /* Localizable.strings */; };
-		BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE520A0BF6000F54870 /* ViewController.swift */; };
 		BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CE620A0BF6000F54870 /* Main.storyboard */; };
 		BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE920A0BFA700F54870 /* Images.swift */; };
 		BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CEA20A0BFA700F54870 /* Strings.swift */; };
+		BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */; };
+		BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */; };
+		BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF120A0CDB000F54870 /* TaskViewController.swift */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -63,10 +65,12 @@
 		BAA92CDC20A0BF5B00F54870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA92CDE20A0BF5B00F54870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BAA92CDF20A0BF5B00F54870 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAA92CE520A0BF6000F54870 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAA92CE620A0BF6000F54870 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAA92CE920A0BFA700F54870 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		BAA92CEA20A0BFA700F54870 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
+		BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskViewController.swift; sourceTree = "<group>"; };
+		BAA92CF120A0CDB000F54870 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,8 +194,10 @@
 		BAA92CE420A0BF6000F54870 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BAA92CE520A0BF6000F54870 /* ViewController.swift */,
 				BAA92CE620A0BF6000F54870 /* Main.storyboard */,
+				BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */,
+				BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */,
+				BAA92CF120A0CDB000F54870 /* TaskViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -536,8 +542,10 @@
 				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
 				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
 				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
-				BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
+				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
+				BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */,
+				BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,7 +730,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.ProtonAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -741,7 +749,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.ProtonAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
