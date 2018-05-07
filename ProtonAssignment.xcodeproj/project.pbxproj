@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		166F872B3DFBB1F0DA13DE1F /* Pods_ProtonAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */; };
 		BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24BC20A0B982000882B8 /* AppDelegate.swift */; };
-		BA8C24BF20A0B982000882B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24BE20A0B982000882B8 /* ViewController.swift */; };
-		BA8C24C220A0B982000882B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8C24C020A0B982000882B8 /* Main.storyboard */; };
-		BA8C24C420A0B984000882B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA8C24C320A0B984000882B8 /* Assets.xcassets */; };
-		BA8C24C720A0B984000882B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA8C24C520A0B984000882B8 /* LaunchScreen.storyboard */; };
 		BA8C24D220A0B984000882B8 /* ProtonAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */; };
 		BA8C24DD20A0B984000882B8 /* ProtonAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */; };
+		BAA92CD320A0BDB000F54870 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CD220A0BDB000F54870 /* Colors.txt */; };
+		BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD520A0BEC500F54870 /* Colors.swift */; };
+		BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD620A0BEC500F54870 /* Storyboards.swift */; };
+		BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */; };
+		BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */; };
+		BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDD20A0BF5B00F54870 /* Localizable.strings */; };
+		BAA92CE320A0BF5B00F54870 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDF20A0BF5B00F54870 /* Info.plist */; };
+		BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE520A0BF6000F54870 /* ViewController.swift */; };
+		BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CE620A0BF6000F54870 /* Main.storyboard */; };
+		BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE920A0BFA700F54870 /* Images.swift */; };
+		BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CEA20A0BFA700F54870 /* Strings.swift */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -45,17 +52,23 @@
 		9AF14D71C1A4F6507FE4BCFB /* Pods-ProtonAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		BA8C24B920A0B982000882B8 /* ProtonAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtonAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24BC20A0B982000882B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA8C24BE20A0B982000882B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA8C24C120A0B982000882B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA8C24C320A0B984000882B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BA8C24C620A0B984000882B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BA8C24C820A0B984000882B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8C24CD20A0B984000882B8 /* ProtonAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtonAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtonAssignmentTests.swift; sourceTree = "<group>"; };
 		BA8C24D320A0B984000882B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8C24D820A0B984000882B8 /* ProtonAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtonAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtonAssignmentUITests.swift; sourceTree = "<group>"; };
 		BA8C24DE20A0B984000882B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA92CD220A0BDB000F54870 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		BAA92CD520A0BEC500F54870 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		BAA92CD620A0BEC500F54870 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAA92CDC20A0BF5B00F54870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAA92CDE20A0BF5B00F54870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BAA92CDF20A0BF5B00F54870 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA92CE520A0BF6000F54870 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAA92CE620A0BF6000F54870 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BAA92CE920A0BFA700F54870 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		BAA92CEA20A0BFA700F54870 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,11 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				BA8C24BC20A0B982000882B8 /* AppDelegate.swift */,
-				BA8C24BE20A0B982000882B8 /* ViewController.swift */,
-				BA8C24C020A0B982000882B8 /* Main.storyboard */,
-				BA8C24C320A0B984000882B8 /* Assets.xcassets */,
-				BA8C24C520A0B984000882B8 /* LaunchScreen.storyboard */,
-				BA8C24C820A0B984000882B8 /* Info.plist */,
+				BAA92CD120A0BDB000F54870 /* Constants */,
+				BAA92CE420A0BF6000F54870 /* Modules */,
+				BAA92CD920A0BF5B00F54870 /* Ressources */,
 			);
 			path = ProtonAssignment;
 			sourceTree = "<group>";
@@ -155,6 +166,38 @@
 			path = ProtonAssignmentUITests;
 			sourceTree = "<group>";
 		};
+		BAA92CD120A0BDB000F54870 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CE920A0BFA700F54870 /* Images.swift */,
+				BAA92CEA20A0BFA700F54870 /* Strings.swift */,
+				BAA92CD520A0BEC500F54870 /* Colors.swift */,
+				BAA92CD620A0BEC500F54870 /* Storyboards.swift */,
+				BAA92CD220A0BDB000F54870 /* Colors.txt */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BAA92CD920A0BF5B00F54870 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */,
+				BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */,
+				BAA92CDD20A0BF5B00F54870 /* Localizable.strings */,
+				BAA92CDF20A0BF5B00F54870 /* Info.plist */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		BAA92CE420A0BF6000F54870 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CE520A0BF6000F54870 /* ViewController.swift */,
+				BAA92CE620A0BF6000F54870 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		C45A59893C94ED4A08DC2557 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +216,7 @@
 			buildConfigurationList = BA8C24E120A0B984000882B8 /* Build configuration list for PBXNativeTarget "ProtonAssignment" */;
 			buildPhases = (
 				C1F2A4F959B679BD71ADFC82 /* [CP] Check Pods Manifest.lock */,
+				BAA92CD420A0BE9C00F54870 /* SwiftGen */,
 				BAA92CD020A0BC5800F54870 /* SwiftLint */,
 				BA8C24B520A0B982000882B8 /* Sources */,
 				BA8C24B620A0B982000882B8 /* Frameworks */,
@@ -279,9 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8C24C720A0B984000882B8 /* LaunchScreen.storyboard in Resources */,
-				BA8C24C420A0B984000882B8 /* Assets.xcassets in Resources */,
-				BA8C24C220A0B982000882B8 /* Main.storyboard in Resources */,
+				BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */,
+				BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */,
+				BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */,
+				BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */,
+				BAA92CE320A0BF5B00F54870 /* Info.plist in Resources */,
+				BAA92CD320A0BDB000F54870 /* Colors.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +444,20 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint > /dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		BAA92CD420A0BE9C00F54870 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\nSRCDIR=\"$PROJECT_DIR/ProtonAssignment\"\n$PODS_ROOT/SwiftGen/bin/swiftgen storyboards -t swift3 \"$SRCDIR\" --output \"$SRCDIR/Constants/Storyboards.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen xcassets -t swift3 \"$SRCDIR/Ressources/Assets.xcassets\" --output \"$SRCDIR/Constants/Images.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen strings -t structured-swift3 \"$SRCDIR/Ressources/Base.lproj/Localizable.strings\" --output \"$SRCDIR/Constants/Strings.swift\"\n$PODS_ROOT/SwiftGen/bin/swiftgen colors -t swift3 \"$SRCDIR/Constants/colors.txt\" --output \"$SRCDIR/Constants/Colors.swift\"\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
+		};
 		C09AEBB7F83858D9152E943A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,7 +537,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA8C24BF20A0B982000882B8 /* ViewController.swift in Sources */,
+				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
+				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
+				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
+				BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */,
+				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,20 +578,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BA8C24C020A0B982000882B8 /* Main.storyboard */ = {
+		BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BA8C24C120A0B982000882B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BA8C24C520A0B984000882B8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA8C24C620A0B984000882B8 /* Base */,
+				BAA92CDC20A0BF5B00F54870 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BAA92CDD20A0BF5B00F54870 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAA92CDE20A0BF5B00F54870 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -653,7 +718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ProtonAssignment/Info.plist;
+				INFOPLIST_FILE = ProtonAssignment/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,7 +737,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ProtonAssignment/Info.plist;
+				INFOPLIST_FILE = ProtonAssignment/Ressources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

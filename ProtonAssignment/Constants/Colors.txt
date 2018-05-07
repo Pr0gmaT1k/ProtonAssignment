@@ -1,0 +1,5 @@
+Primary: #514F5F
+Secondary: #C7C6CB
+Purple: #9594CC
+Red: #FF0006
+Green: #C1D6C3
