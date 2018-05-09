@@ -9,6 +9,8 @@ import Foundation
 enum L10n {
   /// COMPLETED
   static let pageMenuCompleted = L10n.tr("Localizable", "page_menu_completed")
+  /// IN PROGRESS
+  static let pageMenuInProgress = L10n.tr("Localizable", "page_menu_in_progress")
   /// TASK
   static let pageMenuTask = L10n.tr("Localizable", "page_menu_task")
   /// DELAYED ONE MINUTE

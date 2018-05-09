@@ -24,10 +24,13 @@ final class PageMenuViewController: UIViewController {
         let taskVC = StoryboardScene.Main.taskViewController.instantiate()
         taskVC.title = L10n.pageMenuTask
         
+        let inProgressTaskVC = StoryboardScene.Main.inProgressTaskViewController.instantiate()
+        inProgressTaskVC.title = L10n.pageMenuInProgress
+        
         let completedTaskVC = StoryboardScene.Main.completedTaskViewController.instantiate()
         completedTaskVC.title = L10n.pageMenuCompleted
         
-        controllerArray.append(contentsOf: [taskVC, completedTaskVC])
+        controllerArray.append(contentsOf: [taskVC, inProgressTaskVC, completedTaskVC])
         
         // Page menu options
         let parameters: [CAPSPageMenuOption] = [
