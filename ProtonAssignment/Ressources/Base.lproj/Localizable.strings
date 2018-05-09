@@ -1,17 +1,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 // MARK: Main title
-"navbar_main_title" = "BARRIKADE";
-
-// MARK:- Sync Mesage
-"sync_message_article_to_sync" = "Artikel zu synchronisieren : ";
 
 // MARK:- Page menu
-"page_menu_aktuel" = "AKTUEL";
-"page_menu_local_infos" = "LOKALE INFOS";
-"page_menu_analyses" = "ANALYSE";
-"page_menu_globale_infos" = "GLOBALE INFOS";
-"page_menu_agenda" = "AGENDA";
+"page_menu_task" = "TASK";
+"page_menu_completed" = "COMPLETED";
 
-// MARK:- News Details
-// HTML: Boot strap is in ressources/css. Specify Bundle.mail.bundleUrl for the Base Url.
-"news_details_html" = "<html><head><link rel=\"stylesheet\" href=\"bootstrap.min.css\"</head><body>%@</body></html>";
+// Screen Task
+"taskVC_start_now" = "START NOW";
+"taskVC_start_delayed" = "DELAYED ONE MINUTE";

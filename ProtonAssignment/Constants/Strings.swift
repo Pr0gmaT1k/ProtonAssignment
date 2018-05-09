@@ -7,24 +7,14 @@ import Foundation
 
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 enum L10n {
-  /// BARRIKADE
-  static let navbarMainTitle = L10n.tr("Localizable", "navbar_main_title")
-  /// <html><head><link rel="stylesheet" href="bootstrap.min.css"</head><body>%@</body></html>
-  static func newsDetailsHtml(_ p1: String) -> String {
-    return L10n.tr("Localizable", "news_details_html", p1)
-  }
-  /// AGENDA
-  static let pageMenuAgenda = L10n.tr("Localizable", "page_menu_agenda")
-  /// AKTUEL
-  static let pageMenuAktuel = L10n.tr("Localizable", "page_menu_aktuel")
-  /// ANALYSE
-  static let pageMenuAnalyses = L10n.tr("Localizable", "page_menu_analyses")
-  /// GLOBALE INFOS
-  static let pageMenuGlobaleInfos = L10n.tr("Localizable", "page_menu_globale_infos")
-  /// LOKALE INFOS
-  static let pageMenuLocalInfos = L10n.tr("Localizable", "page_menu_local_infos")
-  /// Artikel zu synchronisieren : 
-  static let syncMessageArticleToSync = L10n.tr("Localizable", "sync_message_article_to_sync")
+  /// COMPLETED
+  static let pageMenuCompleted = L10n.tr("Localizable", "page_menu_completed")
+  /// TASK
+  static let pageMenuTask = L10n.tr("Localizable", "page_menu_task")
+  /// DELAYED ONE MINUTE
+  static let taskVCStartDelayed = L10n.tr("Localizable", "taskVC_start_delayed")
+  /// START NOW
+  static let taskVCStartNow = L10n.tr("Localizable", "taskVC_start_now")
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 
