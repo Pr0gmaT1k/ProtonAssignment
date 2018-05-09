@@ -11,6 +11,10 @@ enum L10n {
   static let pageMenuCompleted = L10n.tr("Localizable", "page_menu_completed")
   /// TASK
   static let pageMenuTask = L10n.tr("Localizable", "page_menu_task")
+  /// DELAYED ONE MINUTE
+  static let taskVCStartDelayed = L10n.tr("Localizable", "taskVC_start_delayed")
+  /// START NOW
+  static let taskVCStartNow = L10n.tr("Localizable", "taskVC_start_now")
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 

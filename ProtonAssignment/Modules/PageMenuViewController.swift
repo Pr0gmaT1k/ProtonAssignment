@@ -31,11 +31,11 @@ final class PageMenuViewController: UIViewController {
         
         // Page menu options
         let parameters: [CAPSPageMenuOption] = [
-            .centerMenuItems(true),
             .scrollMenuBackgroundColor(UIColor(named: .secondary)),
             .viewBackgroundColor(UIColor.groupTableViewBackground),
             .unselectedMenuItemLabelColor(.white),
-            .selectionIndicatorHeight(1)
+            .selectionIndicatorHeight(1),
+            .useMenuLikeSegmentedControl(true)
         ]
         
         // Init and add menu

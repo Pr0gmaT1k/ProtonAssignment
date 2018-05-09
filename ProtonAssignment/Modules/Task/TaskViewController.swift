@@ -22,18 +22,39 @@ final class TaskViewController: UIViewController, StoryboardBased {
         
         // Table View setup
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.register(cellType: TaskTableViewCell.self)
     }
 }
 
 // MARK:- TableView Delegate & DataSource extension
-extension TaskViewController: UITableViewDataSource {
+extension TaskViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return self.tableView.dequeueReusableCell(for: indexPath) as TaskTableViewCell
+        let cell = self.tableView.dequeueReusableCell(for: indexPath) as TaskTableViewCell
+        cell.delagate = self
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return task.count
+    }
+    
+}
+
+// MARK:- TaskTableViewcellDelegate
+extension TaskViewController: TaskTableViewcellDelegate {
+    func didSelect(taskTableViewCell: TaskTableViewCell) {
+        // If the select task is already selected, there is nothing to do
+        if taskTableViewCell.isTaskSelected { return }
+        // else found the visible selected task
+        let visibleCells = self.tableView.visibleCells.compactMap { $0 as? TaskTableViewCell }
+        for visibleCell in visibleCells where visibleCell.isTaskSelected {
+            visibleCell.isTaskSelected = false
+        }
+    }
+    
+    func didStartTask(taskTableViewCell: TaskTableViewCell, delayed: Bool) {
+        // TODO...
     }
 }
