@@ -31,10 +31,18 @@ final class InProgressTaskViewController: UIViewController, StoryboardBased {
 // MARK:- TableView Delegate & DataSource extension
 extension InProgressTaskViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return self.tableView.dequeueReusableCell(for: indexPath) as InProgressTaskTableViewCell
+        let cell = self.tableView.dequeueReusableCell(for: indexPath) as InProgressTaskTableViewCell
+        cell.delegate = self
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return task.count
+    }
+}
+
+extension InProgressTaskViewController: InProgressTaskTableViewCellDelegate {
+    func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell) {
+        // TODO...
     }
 }

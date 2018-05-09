@@ -25,5 +25,6 @@ final class InProgressTaskTableViewCell: UITableViewCell, NibReusable {
     // MARK:- IBActions
     @IBAction func cancelTaskDidTouch(_ sender: Any) {
         delegate?.taskDidCancel(inProgressTaskTVC: self)
+        print("Task Did Cancel")
     }
 }
