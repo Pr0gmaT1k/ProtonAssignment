@@ -9,6 +9,18 @@
 import UIKit
 import Reusable
 
-class CompletedTaskTableViewCell: UITableViewCell, NibReusable {
+/** Cell who display information of task execution history */
+final class CompletedTaskTableViewCell: UITableViewCell, NibReusable {
+    // MARK:- IBoutlets
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var descLabel: UIView!
+    @IBOutlet private weak var sucessLabel: UILabel!
+    @IBOutlet private weak var startDateLabel: UILabel!
+    @IBOutlet private weak var endDateLabel: UILabel!
+    @IBOutlet private weak var durationLabel: UILabel!
     
+    // MARK:- func
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
 }

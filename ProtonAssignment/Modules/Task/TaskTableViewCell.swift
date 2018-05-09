@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 
+/** Delagate to communicate to controller selection & start event */
 protocol TaskTableViewcellDelegate: class {
     func didSelect(taskTableViewCell: TaskTableViewCell)
     func didStartTask(taskTableViewCell: TaskTableViewCell, delayed: Bool)
@@ -22,6 +23,8 @@ final class TaskTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var rightViewWidth: NSLayoutConstraint!
     @IBOutlet private weak var rightLabel: UILabel!
     @IBOutlet private weak var leftLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var descLabel: UILabel!
     
     // MARK:- Public Properties
     weak var delagate: TaskTableViewcellDelegate?

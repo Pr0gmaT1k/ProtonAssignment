@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 
+/** Information Controller who display task execution history */
 final class CompletedTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlet
     @IBOutlet fileprivate weak var tableView: UITableView!

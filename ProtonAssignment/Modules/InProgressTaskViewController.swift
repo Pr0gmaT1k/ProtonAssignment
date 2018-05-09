@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 
+/** Display and cancel task in progress  */
 final class InProgressTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlet
     @IBOutlet fileprivate weak var tableView: UITableView!
