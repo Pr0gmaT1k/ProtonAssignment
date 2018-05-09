@@ -9,10 +9,12 @@
 import UIKit
 import Reusable
 
+/** Delegate to communicate with controller cancel task event */
 protocol InProgressTaskTableViewCellDelegate: class {
     func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell)
 }
 
+/** Cell used in InProgressTaskViewController to display task in progress */
 final class InProgressTaskTableViewCell: UITableViewCell, NibReusable {
     // MARK:- IBOutlets
     @IBOutlet weak var titleLabel: UILabel!

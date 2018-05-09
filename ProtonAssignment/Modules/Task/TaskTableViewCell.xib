@@ -163,11 +163,13 @@
             </tableViewCellContentView>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <connections>
+                <outlet property="descLabel" destination="Xfo-a7-ZfT" id="aMu-S4-SdK"/>
                 <outlet property="leftLabel" destination="dBh-xz-DTG" id="a3a-cj-fFe"/>
                 <outlet property="leftViewWidth" destination="fg5-b2-uvc" id="4xl-5X-zQJ"/>
                 <outlet property="rightLabel" destination="NqS-b7-b6u" id="5W3-CM-5KA"/>
                 <outlet property="rightViewWidth" destination="9fD-XS-jBF" id="sY0-jh-zai"/>
                 <outlet property="shadowView" destination="6Ye-5c-LZc" id="fed-QE-czp"/>
+                <outlet property="titleLabel" destination="aWs-qw-fd4" id="Gp3-Gq-pqU"/>
             </connections>
             <point key="canvasLocation" x="42" y="-111"/>
         </tableViewCell>

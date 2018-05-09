@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 
+/** ViewController that display ready to launch task */
 final class TaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlet
     @IBOutlet fileprivate weak var tableView: UITableView!

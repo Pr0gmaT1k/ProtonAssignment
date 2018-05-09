@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Page Menu View Controller-->
+        <!--HOMEWORK-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="PageMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PageMenuViewController" customModule="ProtonAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageMenuViewController" title="HOMEWORK" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PageMenuViewController" customModule="ProtonAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FbZ-qz-MKa"/>
+                    <navigationItem key="navigationItem" title="HOMEWORK" id="FbZ-qz-MKa"/>
                     <connections>
                         <outlet property="pageContainer" destination="fTl-P8-eGa" id="9tI-14-Y3q"/>
                     </connections>
@@ -108,9 +108,24 @@
                     <view key="view" contentMode="scaleToFill" id="P5A-f4-vTc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sj3-QD-8e3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sj3-QD-8e3" firstAttribute="top" secondItem="P5A-f4-vTc" secondAttribute="top" id="JCl-RU-XHG"/>
+                            <constraint firstItem="h3c-vC-ltn" firstAttribute="bottom" secondItem="sj3-QD-8e3" secondAttribute="bottom" id="VcD-yL-lmo"/>
+                            <constraint firstItem="h3c-vC-ltn" firstAttribute="trailing" secondItem="sj3-QD-8e3" secondAttribute="trailing" id="XHK-90-dMe"/>
+                            <constraint firstItem="sj3-QD-8e3" firstAttribute="leading" secondItem="h3c-vC-ltn" secondAttribute="leading" id="pyA-le-stP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h3c-vC-ltn"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="sj3-QD-8e3" id="mJe-U6-nCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g99-UC-rVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +140,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.32156282660000002" green="0.31538394089999999" blue="0.38745903970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

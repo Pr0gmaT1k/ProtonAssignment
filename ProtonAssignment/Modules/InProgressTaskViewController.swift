@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 
+/** Display and cancel task in progress  */
 final class InProgressTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlet
     @IBOutlet fileprivate weak var tableView: UITableView!
@@ -41,6 +42,7 @@ extension InProgressTaskViewController: UITableViewDataSource, UITableViewDelega
     }
 }
 
+// MARK:- InProgressTaskTableViewCellDelegate
 extension InProgressTaskViewController: InProgressTaskTableViewCellDelegate {
     func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell) {
         // TODO...
