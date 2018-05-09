@@ -62,6 +62,8 @@ enum StoryboardScene {
 
     static let completedTaskViewController = SceneType<ProtonAssignment.CompletedTaskViewController>(storyboard: Main.self, identifier: "CompletedTaskViewController")
 
+    static let inProgressTaskViewController = SceneType<ProtonAssignment.InProgressTaskViewController>(storyboard: Main.self, identifier: "InProgressTaskViewController")
+
     static let pageMenuViewController = SceneType<ProtonAssignment.PageMenuViewController>(storyboard: Main.self, identifier: "PageMenuViewController")
 
     static let taskViewController = SceneType<ProtonAssignment.TaskViewController>(storyboard: Main.self, identifier: "TaskViewController")

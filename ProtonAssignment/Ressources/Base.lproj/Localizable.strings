@@ -4,6 +4,7 @@
 // MARK:- Page menu
 "page_menu_task" = "TASK";
 "page_menu_completed" = "COMPLETED";
+"page_menu_in_progress" = "IN PROGRESS";
 
 // Screen Task
 "taskVC_start_now" = "START NOW";
