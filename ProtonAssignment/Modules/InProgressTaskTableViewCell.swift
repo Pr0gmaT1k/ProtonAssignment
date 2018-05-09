@@ -9,10 +9,21 @@
 import UIKit
 import Reusable
 
+protocol InProgressTaskTableViewCellDelegate: class {
+    func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell)
+}
+
 final class InProgressTaskTableViewCell: UITableViewCell, NibReusable {
     // MARK:- IBOutlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var tptLabel: UILabel!
+    
     // MARK:- Properties
+    weak var delegate: InProgressTaskTableViewCellDelegate?
+    
     // MARK:- IBActions
-    // MARK:- Init
-    // MARK:- Funcs
+    @IBAction func cancelTaskDidTouch(_ sender: Any) {
+        delegate?.taskDidCancel(inProgressTaskTVC: self)
+    }
 }

@@ -9,7 +9,6 @@
 import UIKit
 import Reusable
 
-
 final class InProgressTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlet
     @IBOutlet fileprivate weak var tableView: UITableView!
