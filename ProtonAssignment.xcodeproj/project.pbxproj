@@ -13,6 +13,7 @@
 		BA7BC4C120A3639F006D7369 /* InProgressTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */; };
 		BA7BC4C520A369AF006D7369 /* CompletedTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4C320A369AF006D7369 /* CompletedTaskTableViewCell.swift */; };
 		BA7BC4C620A369AF006D7369 /* CompletedTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7BC4C420A369AF006D7369 /* CompletedTaskTableViewCell.xib */; };
+		BA7BC4C920A39108006D7369 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */; };
 		BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24BC20A0B982000882B8 /* AppDelegate.swift */; };
 		BA8C24D220A0B984000882B8 /* ProtonAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */; };
 		BA8C24DD20A0B984000882B8 /* ProtonAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */; };
@@ -62,6 +63,7 @@
 		BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InProgressTaskTableViewCell.xib; sourceTree = "<group>"; };
 		BA7BC4C320A369AF006D7369 /* CompletedTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskTableViewCell.swift; sourceTree = "<group>"; };
 		BA7BC4C420A369AF006D7369 /* CompletedTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedTaskTableViewCell.xib; sourceTree = "<group>"; };
+		BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		BA8C24B920A0B982000882B8 /* ProtonAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtonAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24BC20A0B982000882B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8C24CD20A0B984000882B8 /* ProtonAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtonAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,14 @@
 			name = InProgressTask;
 			sourceTree = "<group>";
 		};
+		BA7BC4C720A390F6006D7369 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
 		BA8C24B020A0B982000882B8 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +238,7 @@
 		BAA92CE420A0BF6000F54870 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BA7BC4C720A390F6006D7369 /* AddTask */,
 				BA7BC4BB20A3613B006D7369 /* InProgressTask */,
 				BA7BC4BA20A36130006D7369 /* CompletedTask */,
 				BAA92CF420A0D45600F54870 /* Task */,
@@ -599,6 +610,7 @@
 				BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
 				BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */,
+				BA7BC4C920A39108006D7369 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

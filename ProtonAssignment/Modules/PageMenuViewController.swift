@@ -19,6 +19,10 @@ final class PageMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Navigation Bar
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentAddTaskVC))
+
+        
         // Page Menu
         // Setup VC
         let taskVC = StoryboardScene.Main.taskViewController.instantiate()
@@ -46,5 +50,10 @@ final class PageMenuViewController: UIViewController {
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height), pageMenuOptions: parameters)
         guard let pageMenu = pageMenu else { return }
         self.pageContainer.addSubview(pageMenu.view)
+    }
+    
+    @objc func presentAddTaskVC() {
+        let vc = StoryboardScene.Main.addTaskViewController.instantiate()
+        self.navigationController?.present(vc, animated: true)
     }
 }
