@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 import SkyFloatingLabelTextField
+import Photos
 
 final class AddTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlets
@@ -20,6 +21,7 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
     
     // MARK:- Properties
     fileprivate var keywords = [String]()
+    fileprivate var imagePicker = UIImagePickerController()
     
     // MARK:- Public func
     override func viewDidLoad() {
@@ -39,6 +41,12 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
         self.tableView.delegate = self
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.register(cellType: AddTaskTableViewCell.self)
+        
+        // ImagePickerControler setup
+        PHPhotoLibrary.requestAuthorization { auth in print(auth) }
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.modalPresentationStyle = .popover
+        imagePicker.delegate = self
     }
     
     // MARK:- IBActions
@@ -55,7 +63,7 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
     }
     
     @IBAction func chooseFileDidTouch(_ sender: Any) {
-        print("open galery")
+        self.present(imagePicker, animated: true)
         self.view.endEditing(true)
     }
     
@@ -95,5 +103,14 @@ extension AddTaskViewController: AddTaskTableViewCellDelegate {
         let index = keywords.index(of: keyword) else { return /* TODO: Throw error */ }
         keywords.remove(at: index)
         tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+}
+
+// MARK:- UIImagePickerControllerDelegate
+extension AddTaskViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+        print(info)
+        self.fileTextField.text = (info[UIImagePickerControllerImageURL] as? NSURL)?.lastPathComponent
+        self.imagePicker.dismiss(animated: true)
     }
 }
