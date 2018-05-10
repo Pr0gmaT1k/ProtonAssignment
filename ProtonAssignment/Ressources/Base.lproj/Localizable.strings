@@ -9,3 +9,9 @@
 // Screen Task
 "taskVC_start_now" = "START NOW";
 "taskVC_start_delayed" = "DELAYED ONE MINUTE";
+
+// Screen Add Task
+"add_task_name_placeholder" = "Name";
+"add_task_desc_placeholder" = "Description";
+"add_taks_file_placeholder" = "File";
+"add_taks_addKeyWord_placeholder" = "Add Keyword";
