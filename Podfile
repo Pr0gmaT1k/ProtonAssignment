@@ -8,6 +8,7 @@ target ‘ProtonAssignment' do
   pod 'PageMenu'
   pod 'SwiftLint'
   pod 'SwiftGen'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
 
   target 'ProtonAssignmentTests' do
     inherit! :search_paths

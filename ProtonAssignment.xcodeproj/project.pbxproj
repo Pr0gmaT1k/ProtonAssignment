@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		166F872B3DFBB1F0DA13DE1F /* Pods_ProtonAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */; };
+		BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */; };
+		BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */; };
+		BA7BC4C120A3639F006D7369 /* InProgressTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */; };
+		BA7BC4C520A369AF006D7369 /* CompletedTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4C320A369AF006D7369 /* CompletedTaskTableViewCell.swift */; };
+		BA7BC4C620A369AF006D7369 /* CompletedTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7BC4C420A369AF006D7369 /* CompletedTaskTableViewCell.xib */; };
+		BA7BC4C920A39108006D7369 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */; };
 		BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24BC20A0B982000882B8 /* AppDelegate.swift */; };
 		BA8C24D220A0B984000882B8 /* ProtonAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */; };
 		BA8C24DD20A0B984000882B8 /* ProtonAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */; };
+		BA97C2A620A48B5C0098096A /* AddTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97C2A420A48B5C0098096A /* AddTaskTableViewCell.swift */; };
+		BA97C2A720A48B5C0098096A /* AddTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA97C2A520A48B5C0098096A /* AddTaskTableViewCell.xib */; };
 		BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD520A0BEC500F54870 /* Colors.swift */; };
 		BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD620A0BEC500F54870 /* Storyboards.swift */; };
 		BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */; };
 		BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */; };
 		BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDD20A0BF5B00F54870 /* Localizable.strings */; };
-		BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE520A0BF6000F54870 /* ViewController.swift */; };
 		BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CE620A0BF6000F54870 /* Main.storyboard */; };
 		BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CE920A0BFA700F54870 /* Images.swift */; };
 		BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CEA20A0BFA700F54870 /* Strings.swift */; };
+		BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */; };
+		BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */; };
+		BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF120A0CDB000F54870 /* TaskViewController.swift */; };
+		BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */; };
+		BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +60,12 @@
 		55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA69D6052387D8A4EBC0B72 /* Pods-ProtonAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF14D71C1A4F6507FE4BCFB /* Pods-ProtonAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskViewController.swift; sourceTree = "<group>"; };
+		BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskTableViewCell.swift; sourceTree = "<group>"; };
+		BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InProgressTaskTableViewCell.xib; sourceTree = "<group>"; };
+		BA7BC4C320A369AF006D7369 /* CompletedTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskTableViewCell.swift; sourceTree = "<group>"; };
+		BA7BC4C420A369AF006D7369 /* CompletedTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedTaskTableViewCell.xib; sourceTree = "<group>"; };
+		BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		BA8C24B920A0B982000882B8 /* ProtonAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtonAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24BC20A0B982000882B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA8C24CD20A0B984000882B8 /* ProtonAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtonAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +74,8 @@
 		BA8C24D820A0B984000882B8 /* ProtonAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtonAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtonAssignmentUITests.swift; sourceTree = "<group>"; };
 		BA8C24DE20A0B984000882B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA97C2A420A48B5C0098096A /* AddTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskTableViewCell.swift; sourceTree = "<group>"; };
+		BA97C2A520A48B5C0098096A /* AddTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskTableViewCell.xib; sourceTree = "<group>"; };
 		BAA92CD220A0BDB000F54870 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
 		BAA92CD520A0BEC500F54870 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		BAA92CD620A0BEC500F54870 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
@@ -63,10 +83,14 @@
 		BAA92CDC20A0BF5B00F54870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA92CDE20A0BF5B00F54870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BAA92CDF20A0BF5B00F54870 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAA92CE520A0BF6000F54870 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAA92CE620A0BF6000F54870 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAA92CE920A0BFA700F54870 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		BAA92CEA20A0BFA700F54870 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
+		BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskViewController.swift; sourceTree = "<group>"; };
+		BAA92CF120A0CDB000F54870 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +135,36 @@
 				DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA7BC4BA20A36130006D7369 /* CompletedTask */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CEF20A0CD8F00F54870 /* CompletedTaskViewController.swift */,
+				BA7BC4C320A369AF006D7369 /* CompletedTaskTableViewCell.swift */,
+				BA7BC4C420A369AF006D7369 /* CompletedTaskTableViewCell.xib */,
+			);
+			name = CompletedTask;
+			sourceTree = "<group>";
+		};
+		BA7BC4BB20A3613B006D7369 /* InProgressTask */ = {
+			isa = PBXGroup;
+			children = (
+				BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */,
+				BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */,
+				BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */,
+			);
+			name = InProgressTask;
+			sourceTree = "<group>";
+		};
+		BA7BC4C720A390F6006D7369 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */,
+				BA97C2A420A48B5C0098096A /* AddTaskTableViewCell.swift */,
+				BA97C2A520A48B5C0098096A /* AddTaskTableViewCell.xib */,
+			);
+			path = AddTask;
 			sourceTree = "<group>";
 		};
 		BA8C24B020A0B982000882B8 = {
@@ -190,10 +244,24 @@
 		BAA92CE420A0BF6000F54870 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BAA92CE520A0BF6000F54870 /* ViewController.swift */,
+				BA7BC4C720A390F6006D7369 /* AddTask */,
+				BA7BC4BB20A3613B006D7369 /* InProgressTask */,
+				BA7BC4BA20A36130006D7369 /* CompletedTask */,
+				BAA92CF420A0D45600F54870 /* Task */,
 				BAA92CE620A0BF6000F54870 /* Main.storyboard */,
+				BAA92CED20A0CA7E00F54870 /* PageMenuViewController.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		BAA92CF420A0D45600F54870 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				BAA92CF120A0CDB000F54870 /* TaskViewController.swift */,
+				BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */,
+				BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 		C45A59893C94ED4A08DC2557 /* Frameworks */ = {
@@ -321,10 +389,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA97C2A720A48B5C0098096A /* AddTaskTableViewCell.xib in Resources */,
+				BA7BC4C120A3639F006D7369 /* InProgressTaskTableViewCell.xib in Resources */,
 				BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */,
 				BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */,
+				BA7BC4C620A369AF006D7369 /* CompletedTaskTableViewCell.xib in Resources */,
 				BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */,
 				BAA92CE820A0BF6000F54870 /* Main.storyboard in Resources */,
+				BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +585,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -520,6 +593,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -535,10 +609,18 @@
 			files = (
 				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
 				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
+				BA97C2A620A48B5C0098096A /* AddTaskTableViewCell.swift in Sources */,
+				BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */,
 				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
-				BAA92CE720A0BF6000F54870 /* ViewController.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
+				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
+				BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */,
+				BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */,
+				BA7BC4C520A369AF006D7369 /* CompletedTaskTableViewCell.swift in Sources */,
+				BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
+				BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */,
+				BA7BC4C920A39108006D7369 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +804,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.ProtonAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -741,7 +823,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.ProtonAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
