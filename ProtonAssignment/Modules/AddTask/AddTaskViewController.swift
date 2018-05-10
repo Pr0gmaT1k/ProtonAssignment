@@ -13,11 +13,11 @@ import Photos
 
 final class AddTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlets
-    @IBOutlet private weak var nameTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var descTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var fileTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var addKeywordTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var nameTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var descTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var fileTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var addKeywordTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var tableView: UITableView!
     
     // MARK:- Properties
     fileprivate var keywords = [String]()
