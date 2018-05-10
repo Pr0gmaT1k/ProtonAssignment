@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		166F872B3DFBB1F0DA13DE1F /* Pods_ProtonAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */; };
+		BA74BD8420A4D60100A8EA8C /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BD8320A4D60100A8EA8C /* Realm.swift */; };
+		BA74BD8820A4D6E900A8EA8C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BD8720A4D6E900A8EA8C /* Task.swift */; };
 		BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */; };
 		BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */; };
 		BA7BC4C120A3639F006D7369 /* InProgressTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */; };
@@ -32,8 +34,6 @@
 		BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF120A0CDB000F54870 /* TaskViewController.swift */; };
 		BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */; };
 		BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */; };
-		BAB752E320A4CE03003C46EB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB752E020A4CE03003C46EB /* Task.swift */; };
-		BAB752E520A4D0A1003C46EB /* ProtonAssignment.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = BAB752E420A4D0A1003C46EB /* ProtonAssignment.xcdatamodel */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +62,8 @@
 		55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA69D6052387D8A4EBC0B72 /* Pods-ProtonAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF14D71C1A4F6507FE4BCFB /* Pods-ProtonAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		BA74BD8320A4D60100A8EA8C /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		BA74BD8720A4D6E900A8EA8C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskViewController.swift; sourceTree = "<group>"; };
 		BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskTableViewCell.swift; sourceTree = "<group>"; };
 		BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InProgressTaskTableViewCell.xib; sourceTree = "<group>"; };
@@ -93,8 +95,6 @@
 		BAA92CF120A0CDB000F54870 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
-		BAB752E020A4CE03003C46EB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		BAB752E420A4D0A1003C46EB /* ProtonAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProtonAssignment.xcdatamodel; sourceTree = SOURCE_ROOT; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +139,14 @@
 				DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA74BD8220A4D60100A8EA8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA74BD8320A4D60100A8EA8C /* Realm.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BA7BC4BA20A36130006D7369 /* CompletedTask */ = {
@@ -197,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8C24BC20A0B982000882B8 /* AppDelegate.swift */,
+				BA74BD8220A4D60100A8EA8C /* Extensions */,
 				BAB752DB20A4CE03003C46EB /* Models */,
 				BAA92CD120A0BDB000F54870 /* Constants */,
 				BAA92CE420A0BF6000F54870 /* Modules */,
@@ -238,7 +247,6 @@
 		BAA92CD920A0BF5B00F54870 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				BAB752E420A4D0A1003C46EB /* ProtonAssignment.xcdatamodel */,
 				BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */,
 				BAA92CDB20A0BF5B00F54870 /* LaunchScreen.storyboard */,
 				BAA92CDD20A0BF5B00F54870 /* Localizable.strings */,
@@ -281,7 +289,7 @@
 		BAB752DF20A4CE03003C46EB /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				BAB752E020A4CE03003C46EB /* Task.swift */,
+				BA74BD8720A4D6E900A8EA8C /* Task.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -638,10 +646,10 @@
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
 				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
 				BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */,
-				BAB752E320A4CE03003C46EB /* Task.swift in Sources */,
+				BA74BD8820A4D6E900A8EA8C /* Task.swift in Sources */,
+				BA74BD8420A4D60100A8EA8C /* Realm.swift in Sources */,
 				BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */,
 				BA7BC4C520A369AF006D7369 /* CompletedTaskTableViewCell.swift in Sources */,
-				BAB752E520A4D0A1003C46EB /* ProtonAssignment.xcdatamodel in Sources */,
 				BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
 				BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */,
