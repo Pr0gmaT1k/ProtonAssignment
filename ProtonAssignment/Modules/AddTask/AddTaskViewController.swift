@@ -9,17 +9,22 @@
 import UIKit
 import Reusable
 import SkyFloatingLabelTextField
+import Photos
+import RealmSwift
 
 final class AddTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlets
-    @IBOutlet private weak var nameTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var descTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var fileTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var addKeywordTextField: SkyFloatingLabelTextFieldWithIcon!
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var nameTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var descTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var fileTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var addKeywordTextField: SkyFloatingLabelTextFieldWithIcon!
+    @IBOutlet fileprivate weak var tableView: UITableView!
     
     // MARK:- Properties
     fileprivate var keywords = [String]()
+    fileprivate var imagePicker = UIImagePickerController()
+    fileprivate let realm = Realm.safeInstance()
+    fileprivate var fileURL: NSURL?
     
     // MARK:- Public func
     override func viewDidLoad() {
@@ -39,6 +44,12 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
         self.tableView.delegate = self
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.register(cellType: AddTaskTableViewCell.self)
+        
+        // ImagePickerControler setup
+        PHPhotoLibrary.requestAuthorization { auth in print(auth) }
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.modalPresentationStyle = .popover
+        imagePicker.delegate = self
     }
     
     // MARK:- IBActions
@@ -55,13 +66,35 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
     }
     
     @IBAction func chooseFileDidTouch(_ sender: Any) {
-        print("open galery")
+        self.present(imagePicker, animated: true)
         self.view.endEditing(true)
     }
     
     @IBAction func saveDidTouch(_ sender: Any) {
-        print("save")
-        self.dismiss(animated: true)
+        if nameTextField.text?.isEmpty == true {
+            nameTextField.placeholderColor = .red
+            return
+        }
+        
+        if fileTextField.text?.isEmpty == true {
+            fileTextField.placeholderColor = .red
+            return
+        }
+        
+        guard let name = nameTextField.text,
+            let fileURL = fileURL else { return /* TODO: Throw error */ }
+        
+        let task = Task()
+        task.id = Int64(arc4random())
+        task.name = name
+        task.desc = descTextField.text
+        task.keywords = List<String>()
+        task.keywords?.append(objectsIn: self.keywords)
+        task.fileUrl = fileURL.absoluteString
+        try? realm.write {
+            realm.add(task)
+            self.dismiss(animated: true)
+        }
     }
 }
 
@@ -95,5 +128,14 @@ extension AddTaskViewController: AddTaskTableViewCellDelegate {
         let index = keywords.index(of: keyword) else { return /* TODO: Throw error */ }
         keywords.remove(at: index)
         tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+}
+
+// MARK:- UIImagePickerControllerDelegate
+extension AddTaskViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+        self.fileTextField.text = (info[UIImagePickerControllerImageURL] as? NSURL)?.lastPathComponent
+        self.fileURL = info[UIImagePickerControllerImageURL] as? NSURL
+        self.imagePicker.dismiss(animated: true)
     }
 }
