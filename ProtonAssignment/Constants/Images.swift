@@ -49,6 +49,7 @@ enum Asset {
   static let cross = ImageAsset(name: "cross")
   static let homework = ImageAsset(name: "homework")
   static let runner = ImageAsset(name: "runner")
+  static let save = ImageAsset(name: "save")
   static let watch = ImageAsset(name: "watch")
 
   // swiftlint:disable trailing_comma
@@ -58,6 +59,7 @@ enum Asset {
     cross,
     homework,
     runner,
+    save,
     watch,
   ]
   // swiftlint:enable trailing_comma

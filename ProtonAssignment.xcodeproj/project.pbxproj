@@ -17,6 +17,8 @@
 		BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24BC20A0B982000882B8 /* AppDelegate.swift */; };
 		BA8C24D220A0B984000882B8 /* ProtonAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */; };
 		BA8C24DD20A0B984000882B8 /* ProtonAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */; };
+		BA97C2A620A48B5C0098096A /* AddTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA97C2A420A48B5C0098096A /* AddTaskTableViewCell.swift */; };
+		BA97C2A720A48B5C0098096A /* AddTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA97C2A520A48B5C0098096A /* AddTaskTableViewCell.xib */; };
 		BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD520A0BEC500F54870 /* Colors.swift */; };
 		BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CD620A0BEC500F54870 /* Storyboards.swift */; };
 		BAA92CE020A0BF5B00F54870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CDA20A0BF5B00F54870 /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		BA8C24D820A0B984000882B8 /* ProtonAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtonAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA8C24DC20A0B984000882B8 /* ProtonAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtonAssignmentUITests.swift; sourceTree = "<group>"; };
 		BA8C24DE20A0B984000882B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA97C2A420A48B5C0098096A /* AddTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskTableViewCell.swift; sourceTree = "<group>"; };
+		BA97C2A520A48B5C0098096A /* AddTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskTableViewCell.xib; sourceTree = "<group>"; };
 		BAA92CD220A0BDB000F54870 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
 		BAA92CD520A0BEC500F54870 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		BAA92CD620A0BEC500F54870 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				BA7BC4C820A39108006D7369 /* AddTaskViewController.swift */,
+				BA97C2A420A48B5C0098096A /* AddTaskTableViewCell.swift */,
+				BA97C2A520A48B5C0098096A /* AddTaskTableViewCell.xib */,
 			);
 			path = AddTask;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA97C2A720A48B5C0098096A /* AddTaskTableViewCell.xib in Resources */,
 				BA7BC4C120A3639F006D7369 /* InProgressTaskTableViewCell.xib in Resources */,
 				BAA92CE120A0BF5B00F54870 /* LaunchScreen.storyboard in Resources */,
 				BAA92CE220A0BF5B00F54870 /* Localizable.strings in Resources */,
@@ -578,6 +585,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -585,6 +593,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -600,6 +609,7 @@
 			files = (
 				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
 				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
+				BA97C2A620A48B5C0098096A /* AddTaskTableViewCell.swift in Sources */,
 				BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */,
 				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,

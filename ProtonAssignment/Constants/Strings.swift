@@ -7,6 +7,14 @@ import Foundation
 
 // swiftlint:disable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 enum L10n {
+  /// Add Keyword
+  static let addTaksAddKeyWordPlaceholder = L10n.tr("Localizable", "add_taks_addKeyWord_placeholder")
+  /// File
+  static let addTaksFilePlaceholder = L10n.tr("Localizable", "add_taks_file_placeholder")
+  /// Description
+  static let addTaskDescPlaceholder = L10n.tr("Localizable", "add_task_desc_placeholder")
+  /// Name
+  static let addTaskNamePlaceholder = L10n.tr("Localizable", "add_task_name_placeholder")
   /// COMPLETED
   static let pageMenuCompleted = L10n.tr("Localizable", "page_menu_completed")
   /// IN PROGRESS

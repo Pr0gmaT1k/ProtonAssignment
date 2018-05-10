@@ -10,6 +10,7 @@ PODS:
     - Reusable/View (= 3.0.1)
   - Reusable/Storyboard (3.0.1)
   - Reusable/View (3.0.1)
+  - SkyFloatingLabelTextField (3.4.0)
   - SwiftGen (5.2.1)
   - SwiftLint (0.25.0)
 
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - PageMenu
   - RealmSwift
   - Reusable (~> 3.0.1)
+  - SkyFloatingLabelTextField (~> 3.0)
   - SwiftGen
   - SwiftLint
 
@@ -25,9 +27,10 @@ SPEC CHECKSUMS:
   Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
   RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
   Reusable: 5362d10271ca8316b104698a21e90498f47e8339
+  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
   SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: a90fe18fb42e576a5d309d63284b282d0b58c8a3
+PODFILE CHECKSUM: 58d66977b47f6247a1a60e15961bba976acd9728
 
 COCOAPODS: 1.4.0
