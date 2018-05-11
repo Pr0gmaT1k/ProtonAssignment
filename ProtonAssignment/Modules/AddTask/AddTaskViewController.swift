@@ -106,7 +106,6 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
                 for keyword in self.keywords {
                     task.keywords.append(Keywords(keyword: keyword))
                 }
-                task.fileUrl = fileURL
                 realm.add(task, update: true)
                 self.dismiss(animated: true)
             }

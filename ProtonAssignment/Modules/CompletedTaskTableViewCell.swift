@@ -19,6 +19,9 @@ final class CompletedTaskTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet private weak var endDateLabel: UILabel!
     @IBOutlet private weak var durationLabel: UILabel!
     
+    // MARK:- Properties
+    private let formatter = DateFormatter()
+    
     // MARK:- func
     func fill(task: Task) {
         self.titleLabel.text = task.name
@@ -40,5 +43,14 @@ final class CompletedTaskTableViewCell: UITableViewCell, NibReusable {
             sucessLabel.text = nil
             sucessLabel.layer.borderColor = UIColor.clear.cgColor
         }
+        
+        startDateLabel.text = task.startDateString
+        endDateLabel.text = task.endDateString
+        durationLabel.text = task.timeElapsedString
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     }
 }
