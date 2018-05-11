@@ -12,6 +12,7 @@ final class Task: Object {
     case desc = "desc"
     case fileUrl = "fileUrl"
     case name = "name"
+    case progress = "progress"
     case status = "status"
     case time = "time"
   }
@@ -26,6 +27,7 @@ final class Task: Object {
   dynamic var desc: String?
   dynamic var fileUrl: String = ""
   dynamic var name: String = ""
+  var progress = RealmOptional<Float>()
   var status = RealmOptional<Int16>()
   var time = RealmOptional<Double>()
   var keywords = List<Keywords>()

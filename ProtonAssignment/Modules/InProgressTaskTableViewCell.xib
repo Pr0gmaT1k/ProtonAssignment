@@ -81,9 +81,18 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="H1P-pV-Rjs">
+                        <rect key="frame" x="0.0" y="201.5" width="512" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="bgH-X3-YN1"/>
+                        </constraints>
+                        <color key="progressTintColor" red="0.99373847250000003" green="0.2395128608" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" red="0.32156282660000002" green="0.31538394089999999" blue="0.38745903970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="H1P-pV-Rjs" firstAttribute="leading" secondItem="xZe-kX-cfs" secondAttribute="leading" id="83b-7U-KPg"/>
                     <constraint firstItem="USi-0M-HKH" firstAttribute="leading" secondItem="xZe-kX-cfs" secondAttribute="leading" constant="15" id="DWM-CM-bAO"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="leading" secondItem="y0q-mh-uj8" secondAttribute="trailing" constant="15" id="Ept-ks-3yV"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="top" secondItem="xZe-kX-cfs" secondAttribute="top" id="J2u-Uo-JVu"/>
@@ -91,6 +100,7 @@
                     <constraint firstItem="y0q-mh-uj8" firstAttribute="top" secondItem="USi-0M-HKH" secondAttribute="bottom" constant="15" id="Jjz-Hg-Xs0"/>
                     <constraint firstAttribute="trailing" secondItem="EJ2-eb-c2b" secondAttribute="trailing" id="PSx-JK-95p"/>
                     <constraint firstItem="USi-0M-HKH" firstAttribute="width" secondItem="kok-D3-XOz" secondAttribute="width" multiplier="2:1" id="UBQ-iR-Hj0"/>
+                    <constraint firstAttribute="trailing" secondItem="H1P-pV-Rjs" secondAttribute="trailing" id="YTh-30-5Cl"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="leading" secondItem="koP-d5-y5L" secondAttribute="trailing" constant="8" id="aIC-5D-0iL"/>
                     <constraint firstAttribute="bottom" secondItem="EJ2-eb-c2b" secondAttribute="bottom" id="cc2-fb-Mnf"/>
                     <constraint firstItem="kok-D3-XOz" firstAttribute="leading" secondItem="USi-0M-HKH" secondAttribute="trailing" constant="5" id="d2b-YM-6Q1"/>
@@ -99,6 +109,7 @@
                     <constraint firstItem="kok-D3-XOz" firstAttribute="top" secondItem="xZe-kX-cfs" secondAttribute="top" constant="15" id="iQt-6f-uCM"/>
                     <constraint firstItem="USi-0M-HKH" firstAttribute="top" secondItem="xZe-kX-cfs" secondAttribute="top" constant="15" id="iWQ-FB-g0E"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="leading" secondItem="kok-D3-XOz" secondAttribute="trailing" constant="15" id="pep-OM-yNH"/>
+                    <constraint firstAttribute="bottom" secondItem="H1P-pV-Rjs" secondAttribute="bottom" id="rX3-b7-LJC"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="top" secondItem="xZe-kX-cfs" secondAttribute="top" id="yGV-Ca-WbP"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="y0q-mh-uj8" secondAttribute="bottom" constant="15" id="yjP-Hp-gWt"/>
                 </constraints>
@@ -106,6 +117,7 @@
             <connections>
                 <outlet property="delayedImage" destination="koP-d5-y5L" id="N4c-xO-Nmc"/>
                 <outlet property="descLabel" destination="y0q-mh-uj8" id="6rp-QM-Kxo"/>
+                <outlet property="progress" destination="H1P-pV-Rjs" id="Ezr-vv-WfK"/>
                 <outlet property="titleLabel" destination="USi-0M-HKH" id="s47-NE-BZk"/>
                 <outlet property="tptLabel" destination="kok-D3-XOz" id="Vr2-Nh-A8k"/>
             </connections>

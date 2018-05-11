@@ -72,6 +72,12 @@ final class TaskManager {
             }
         }
     }
+    
+    fileprivate func updateProgress(operation: FileOperationType, progress: Float) {
+        let primaryKey = operation.source.replacingOccurrences(of: "file://", with: "")
+        guard let task = realm.object(ofType: Task.self, forPrimaryKey: primaryKey) else { return } /* TODO: error */
+        try? realm.write { task.progress.value = progress }
+    }
 }
 
 // MARK: - FileProviderDelegate
@@ -88,5 +94,6 @@ extension TaskManager: FileProviderDelegate {
     
     func fileproviderProgress(_ fileProvider: FileProviderOperations, operation: FileOperationType, progress: Float) {
         print("Copy \(progress * 100) completed.")
+        self.updateProgress(operation: operation, progress: progress)
     }
 }
