@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 import RealmSwift
+import FileProvider
 
 /** Display and cancel task in progress  */
 final class InProgressTaskViewController: UIViewController, StoryboardBased {
@@ -22,6 +23,7 @@ final class InProgressTaskViewController: UIViewController, StoryboardBased {
     }
     fileprivate var notificationToken: NotificationToken?
     fileprivate let realm = Realm.safeInstance()
+//    fileprivate let fileProvider = FileManager.
     
     // MARK:- Public func
     override func viewDidLoad() {

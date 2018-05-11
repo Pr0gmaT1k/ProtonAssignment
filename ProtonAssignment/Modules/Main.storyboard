@@ -131,28 +131,22 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Description"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP8-qf-BvM" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP8-qf-BvM" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
                                         <rect key="frame" x="15" y="135" width="345" height="45"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovL-Hv-XEm">
-                                                <rect key="frame" x="0.0" y="0.0" width="345" height="45"/>
-                                                <connections>
-                                                    <action selector="chooseFileDidTouch:" destination="JLN-Hw-1hN" eventType="touchUpInside" id="7gJ-Bb-eaR"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ovL-Hv-XEm" secondAttribute="trailing" id="MDg-wE-pRt"/>
-                                            <constraint firstItem="ovL-Hv-XEm" firstAttribute="leading" secondItem="dP8-qf-BvM" secondAttribute="leading" id="Xfb-bC-k2u"/>
-                                            <constraint firstItem="ovL-Hv-XEm" firstAttribute="top" secondItem="dP8-qf-BvM" secondAttribute="top" id="bm5-fi-PjD"/>
                                             <constraint firstAttribute="height" constant="45" id="fd0-xz-ksk"/>
-                                            <constraint firstAttribute="bottom" secondItem="ovL-Hv-XEm" secondAttribute="bottom" id="ugx-A3-yhZ"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="File"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovL-Hv-XEm">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="65"/>
+                                        <connections>
+                                            <action selector="chooseFileDidTouch:" destination="JLN-Hw-1hN" eventType="touchUpInside" id="7gJ-Bb-eaR"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfs-FR-tcg" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
                                         <rect key="frame" x="15" y="195" width="305" height="45"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -182,8 +176,10 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Con-fc-tqT" secondAttribute="trailing" constant="15" id="0oB-06-VTm"/>
                                     <constraint firstAttribute="trailing" secondItem="dP8-qf-BvM" secondAttribute="trailing" constant="15" id="1AR-JX-MXO"/>
+                                    <constraint firstItem="ovL-Hv-XEm" firstAttribute="top" secondItem="Ijw-kO-4eZ" secondAttribute="bottom" id="1be-hA-LXY"/>
                                     <constraint firstItem="Con-fc-tqT" firstAttribute="leading" secondItem="1tp-yV-jr8" secondAttribute="leading" constant="15" id="3zo-qd-8t3"/>
                                     <constraint firstAttribute="bottom" secondItem="YCT-Wh-hOl" secondAttribute="bottom" constant="5" id="4qm-0d-dvq"/>
+                                    <constraint firstAttribute="trailing" secondItem="ovL-Hv-XEm" secondAttribute="trailing" id="7Mc-bp-TIq"/>
                                     <constraint firstItem="YCT-Wh-hOl" firstAttribute="leading" secondItem="xfs-FR-tcg" secondAttribute="trailing" constant="5" id="7uX-xR-5PG"/>
                                     <constraint firstItem="dP8-qf-BvM" firstAttribute="leading" secondItem="1tp-yV-jr8" secondAttribute="leading" constant="15" id="LOG-V7-Rk8"/>
                                     <constraint firstItem="Con-fc-tqT" firstAttribute="top" secondItem="1tp-yV-jr8" secondAttribute="top" constant="15" id="O0m-lV-euJ"/>
@@ -192,7 +188,9 @@
                                     <constraint firstItem="Ijw-kO-4eZ" firstAttribute="leading" secondItem="1tp-yV-jr8" secondAttribute="leading" constant="15" id="U87-Yw-GGP"/>
                                     <constraint firstAttribute="trailing" secondItem="Ijw-kO-4eZ" secondAttribute="trailing" constant="15" id="U8g-fr-yJK"/>
                                     <constraint firstItem="Ijw-kO-4eZ" firstAttribute="top" secondItem="Con-fc-tqT" secondAttribute="bottom" constant="15" id="YKp-hI-EHr"/>
+                                    <constraint firstItem="ovL-Hv-XEm" firstAttribute="leading" secondItem="1tp-yV-jr8" secondAttribute="leading" id="YN4-EV-Db4"/>
                                     <constraint firstItem="xfs-FR-tcg" firstAttribute="top" secondItem="dP8-qf-BvM" secondAttribute="bottom" constant="15" id="aRJ-SQ-PMA"/>
+                                    <constraint firstItem="YCT-Wh-hOl" firstAttribute="top" secondItem="ovL-Hv-XEm" secondAttribute="bottom" id="leE-bM-VQr"/>
                                     <constraint firstAttribute="trailing" secondItem="YCT-Wh-hOl" secondAttribute="trailing" id="sTe-iM-HFG"/>
                                     <constraint firstAttribute="bottom" secondItem="xfs-FR-tcg" secondAttribute="bottom" constant="15" id="uJW-4V-3pE"/>
                                     <constraint firstItem="YCT-Wh-hOl" firstAttribute="top" secondItem="dP8-qf-BvM" secondAttribute="bottom" constant="5" id="wc2-UF-dsO"/>
