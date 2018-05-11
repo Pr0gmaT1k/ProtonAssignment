@@ -8,14 +8,21 @@
 
 import UIKit
 import Reusable
+import RealmSwift
+import FilesProvider
 
 /** Display and cancel task in progress  */
 final class InProgressTaskViewController: UIViewController, StoryboardBased {
     // MARK:- IBOutlet
     @IBOutlet fileprivate weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var emptyLabel: UILabel!
     
     // MARK:- Properties
-    fileprivate var task = ["foo", "toto", "blabla"]
+    fileprivate var notificationToken: NotificationToken?
+    fileprivate let realm = Realm.safeInstance()
+    fileprivate var tasks = [Task]() {
+        didSet { self.tableView.isHidden = tasks.isEmpty }
+    }
     
     // MARK:- Public func
     override func viewDidLoad() {
@@ -26,6 +33,18 @@ final class InProgressTaskViewController: UIViewController, StoryboardBased {
         self.tableView.delegate = self
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.register(cellType: InProgressTaskTableViewCell.self)
+        
+        // Empty label
+        self.emptyLabel.text = L10n.inprogressTaskEmpty
+        
+        // Realm
+        let tasksResults = realm.objects(Task.self)
+        self.tasks = tasksResults.filter { $0.state == .inProgress || $0.state == .delayed }
+        notificationToken = tasksResults.observe {[weak self] (changes: RealmCollectionChange) in
+            guard let newTasks = self?.realm.objects(Task.self) else { return }
+            self?.tasks = newTasks.filter { $0.state == .inProgress || $0.state == .delayed }
+            self?.tableView.reloadData()
+        }
     }
 }
 
@@ -34,17 +53,19 @@ extension InProgressTaskViewController: UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(for: indexPath) as InProgressTaskTableViewCell
         cell.delegate = self
+        cell.fill(task: tasks[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return task.count
+        return tasks.count
     }
 }
 
 // MARK:- InProgressTaskTableViewCellDelegate
 extension InProgressTaskViewController: InProgressTaskTableViewCellDelegate {
-    func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell) {
-        // TODO...
+    func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell, task: Task?) {
+        guard let task = task else { return /*TODO: Throw error*/ }
+        TaskManager.shared.cancelTask(task: task)
     }
 }

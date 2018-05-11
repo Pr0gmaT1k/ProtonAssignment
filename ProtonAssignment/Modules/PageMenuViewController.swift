@@ -21,12 +21,13 @@ final class PageMenuViewController: UIViewController {
         super.viewDidLoad()
         // Navigation Bar
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentAddTaskVC))
-
+        self.navigationController?.navigationBar.tintColor = .white
         
         // Page Menu
         // Setup VC
         let taskVC = StoryboardScene.Main.taskViewController.instantiate()
         taskVC.title = L10n.pageMenuTask
+        taskVC.delegate = self
         
         let inProgressTaskVC = StoryboardScene.Main.inProgressTaskViewController.instantiate()
         inProgressTaskVC.title = L10n.pageMenuInProgress
@@ -55,5 +56,14 @@ final class PageMenuViewController: UIViewController {
     @objc func presentAddTaskVC() {
         let vc = StoryboardScene.Main.addTaskViewController.instantiate()
         self.navigationController?.present(vc, animated: true)
+    }
+}
+
+extension PageMenuViewController: TaskViewControllerDelegate {
+    func edit(taskViewController: TaskViewController, task: Task) {
+        let vc = StoryboardScene.Main.addTaskViewController.instantiate()
+        self.present(vc, animated: true) {
+            vc.fill(task: task)
+        }
     }
 }

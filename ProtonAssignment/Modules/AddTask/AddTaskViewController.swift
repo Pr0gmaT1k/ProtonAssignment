@@ -25,6 +25,7 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
     fileprivate var imagePicker = UIImagePickerController()
     fileprivate let realm = Realm.safeInstance()
     fileprivate var fileURL: NSURL?
+    fileprivate var editTask: Task?
     
     // MARK:- Public func
     override func viewDidLoad() {
@@ -52,8 +53,20 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
         imagePicker.delegate = self
     }
     
+    func fill(task: Task) {
+        self.editTask = task
+        self.nameTextField.text = task.name
+        self.descTextField.text = task.desc
+        self.keywords = task.keywords.flatMap { $0.keyword }
+        guard let url = NSURL.init(string: task.fileUrl) else { return }
+        self.fileURL = url
+        self.fileTextField.text = url.lastPathComponent
+        self.tableView.reloadData()
+    }
+    
     // MARK:- IBActions
     @IBAction func addKeywordDidTouch(_ sender: Any) {
+        if self.addKeywordTextField.text?.isEmpty == true { return }
         guard let keyword = self.addKeywordTextField.text else { return /* TODO: Throw error */}
         keywords.insert(keyword, at: 0)
         self.tableView.insertRows(at: [IndexPath.init(row: 0, section: 0)], with: .automatic)
@@ -82,18 +95,35 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
         }
         
         guard let name = nameTextField.text,
-            let fileURL = fileURL else { return /* TODO: Throw error */ }
+            let fileURL = fileURL?.path else { return /* TODO: Throw error */ }
         
-        let task = Task()
-        task.id = Int64(arc4random())
-        task.name = name
-        task.desc = descTextField.text
-        task.keywords = List<String>()
-        task.keywords?.append(objectsIn: self.keywords)
-        task.fileUrl = fileURL.absoluteString
-        try? realm.write {
-            realm.add(task)
-            self.dismiss(animated: true)
+        // Write
+        if let task = self.editTask {
+            // Edit
+            try? realm.write {task.name = name
+                task.desc = descTextField.text
+                task.keywords.removeAll()
+                for keyword in self.keywords {
+                    task.keywords.append(Keywords(keyword: keyword))
+                }
+                task.fileUrl = fileURL
+                realm.add(task, update: true)
+                self.dismiss(animated: true)
+            }
+        } else {
+            // Create
+            let task = Task()
+            task.name = name
+            task.desc = descTextField.text
+            for keyword in self.keywords {
+                task.keywords.append(Keywords(keyword: keyword))
+            }
+            task.fileUrl = fileURL
+            task.status.value = 1
+            try? realm.write {
+                realm.add(task)
+                self.dismiss(animated: true)
+            }
         }
     }
 }
