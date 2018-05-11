@@ -27,7 +27,7 @@ final class Task: Object {
   dynamic var fileUrl: String = ""
   dynamic var name: String = ""
   var status = RealmOptional<Int16>()
-  var time = RealmOptional<Int64>()
+  var time = RealmOptional<Double>()
   var keywords = List<Keywords>()
 
   override static func primaryKey() -> String? {

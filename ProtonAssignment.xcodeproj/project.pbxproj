@@ -38,6 +38,7 @@
 		BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */; };
 		BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */; };
 		BAFC7C7B20A5AEC400949C4D /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7C7A20A5AEC400949C4D /* TaskManager.swift */; };
+		BAFC7C7E20A612CF00949C4D /* Task+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7C7D20A612CF00949C4D /* Task+Utils.swift */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -104,6 +105,7 @@
 		BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		BAFC7C7A20A5AEC400949C4D /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		BAFC7C7C20A5B3C700949C4D /* ProtonAssignment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProtonAssignment.entitlements; sourceTree = "<group>"; };
+		BAFC7C7D20A612CF00949C4D /* Task+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Utils.swift"; sourceTree = "<group>"; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				BA74BD8320A4D60100A8EA8C /* Realm.swift */,
 				BA4634D620A4F3A100D21CFE /* Task+Status.swift */,
 				BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */,
+				BAFC7C7D20A612CF00949C4D /* Task+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -677,6 +680,7 @@
 				BA4634DB20A5968B00D21CFE /* Keyword+Init.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
 				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
+				BAFC7C7E20A612CF00949C4D /* Task+Utils.swift in Sources */,
 				BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */,
 				BA74BD8820A4D6E900A8EA8C /* Task.swift in Sources */,
 				BA74BD8420A4D60100A8EA8C /* Realm.swift in Sources */,

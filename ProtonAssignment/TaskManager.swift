@@ -31,7 +31,10 @@ final class TaskManager {
     
     // MARK:- publlic func
     func lauchTask(task: Task, delayed: Bool) {let url = URL(fileURLWithPath: task.fileUrl)
-        try? realm.write { task.status.value = delayed ? 2 : 3 }
+        try? realm.write {
+            task.status.value = delayed ? 2 : 3
+            task.dateStart = Date()
+        }
         if delayed { // Delayed 1 minute
             DispatchQueue.main.asyncAfter(deadline: .now() + 60) { [weak self] in
                 // break if task change his state
@@ -39,7 +42,6 @@ final class TaskManager {
                 try? self?.realm.write { task.status.value = 3 }
                 let progress = self?.webDAV?.copyItem(localFile: url, to: url.lastPathComponent, overwrite: true, completionHandler: nil)
                 self?.currentTask[task] = progress
-                print("gogogoogo")
             }
         } else {
             let progress = webDAV?.copyItem(localFile: url, to: url.lastPathComponent, overwrite: true, completionHandler: nil)
@@ -49,14 +51,13 @@ final class TaskManager {
     
     func cancelTask(task: Task) {
         currentTask[task]??.cancel()
-        try? realm.write { task.status.value = 4 }
+        try? realm.write {
+            task.status.value = 4
+            task.dateEnd = Date()
+        }
     }
     
     // MARK:- Private func
-    private func lauchTask(task: Task) {
-        
-    }
-    
     fileprivate func changeTaskState(from operation: FileOperationType, state: Int16) {
         // TODO: found an elegant solution...
         let primaryKey = operation.source.replacingOccurrences(of: "file://", with: "")
@@ -65,6 +66,9 @@ final class TaskManager {
         if task.state == .inProgress {
             try? realm.write {
                 task.status.value = state
+                task.dateEnd = Date()
+                guard let startDate = task.dateStart else { return }
+                task.time.value = task.dateEnd?.timeIntervalSince(startDate)
             }
         }
     }
