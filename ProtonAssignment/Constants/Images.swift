@@ -47,6 +47,9 @@ struct ColorAsset {
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 enum Asset {
   static let cross = ImageAsset(name: "cross")
+  static let delete = ImageAsset(name: "delete")
+  static let edit = ImageAsset(name: "edit")
+  static let empty = ImageAsset(name: "empty")
   static let homework = ImageAsset(name: "homework")
   static let runner = ImageAsset(name: "runner")
   static let save = ImageAsset(name: "save")
@@ -57,6 +60,9 @@ enum Asset {
   ]
   static let allImages: [ImageAsset] = [
     cross,
+    delete,
+    edit,
+    empty,
     homework,
     runner,
     save,

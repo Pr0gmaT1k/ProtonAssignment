@@ -15,16 +15,32 @@ enum L10n {
   static let addTaskDescPlaceholder = L10n.tr("Localizable", "add_task_desc_placeholder")
   /// Name *
   static let addTaskNamePlaceholder = L10n.tr("Localizable", "add_task_name_placeholder")
+  /// There is no completed task
+  static let completedTaskEmpty = L10n.tr("Localizable", "completed_task_empty")
+  /// There is no task in progress
+  static let inprogressTaskEmpty = L10n.tr("Localizable", "inprogress_task_empty")
   /// COMPLETED
   static let pageMenuCompleted = L10n.tr("Localizable", "page_menu_completed")
   /// IN PROGRESS
   static let pageMenuInProgress = L10n.tr("Localizable", "page_menu_in_progress")
   /// TASK
   static let pageMenuTask = L10n.tr("Localizable", "page_menu_task")
-  /// DELAYED ONE MINUTE
+  /// There is no pending task
+  static let pendingTaskEmpty = L10n.tr("Localizable", "pending_task_empty")
+  /// canceled
+  static let taskStateCancelled = L10n.tr("Localizable", "task_state_cancelled")
+  /// completed
+  static let taskStateCompleted = L10n.tr("Localizable", "task_state_completed")
+  /// failed
+  static let taskStateFailed = L10n.tr("Localizable", "task_state_failed")
+  /// DELAYED
   static let taskVCStartDelayed = L10n.tr("Localizable", "taskVC_start_delayed")
-  /// START NOW
+  /// EDIT
+  static let taskVCStartEdit = L10n.tr("Localizable", "taskVC_start_edit")
+  /// START
   static let taskVCStartNow = L10n.tr("Localizable", "taskVC_start_now")
+  /// REMOVE
+  static let taskVCStartRemove = L10n.tr("Localizable", "taskVC_start_remove")
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length nesting type_body_length type_name
 

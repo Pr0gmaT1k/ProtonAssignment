@@ -25,7 +25,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0q-mh-uj8">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0q-mh-uj8">
                         <rect key="frame" x="15" y="53" width="452" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="1B8-4h-fqS"/>
@@ -34,7 +34,7 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kok-D3-XOz">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kok-D3-XOz">
                         <rect key="frame" x="318" y="15" width="149" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,15 +68,30 @@
                             <constraint firstItem="Qi6-G7-Sdi" firstAttribute="centerY" secondItem="EJ2-eb-c2b" secondAttribute="centerY" id="wuw-xL-ulK"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch" translatesAutoresizingMaskIntoConstraints="NO" id="koP-d5-y5L">
+                        <rect key="frame" x="444" y="8" width="30" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="FQ9-oO-qV1"/>
+                            <constraint firstAttribute="height" constant="30" id="dOV-4m-2Q8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="USi-0M-HKH" firstAttribute="leading" secondItem="xZe-kX-cfs" secondAttribute="leading" constant="15" id="DWM-CM-bAO"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="leading" secondItem="y0q-mh-uj8" secondAttribute="trailing" constant="15" id="Ept-ks-3yV"/>
                     <constraint firstItem="EJ2-eb-c2b" firstAttribute="top" secondItem="xZe-kX-cfs" secondAttribute="top" id="J2u-Uo-JVu"/>
+                    <constraint firstItem="koP-d5-y5L" firstAttribute="top" secondItem="xZe-kX-cfs" secondAttribute="top" constant="8" id="JIz-8A-z30"/>
                     <constraint firstItem="y0q-mh-uj8" firstAttribute="top" secondItem="USi-0M-HKH" secondAttribute="bottom" constant="15" id="Jjz-Hg-Xs0"/>
                     <constraint firstAttribute="trailing" secondItem="EJ2-eb-c2b" secondAttribute="trailing" id="PSx-JK-95p"/>
                     <constraint firstItem="USi-0M-HKH" firstAttribute="width" secondItem="kok-D3-XOz" secondAttribute="width" multiplier="2:1" id="UBQ-iR-Hj0"/>
+                    <constraint firstItem="EJ2-eb-c2b" firstAttribute="leading" secondItem="koP-d5-y5L" secondAttribute="trailing" constant="8" id="aIC-5D-0iL"/>
                     <constraint firstAttribute="bottom" secondItem="EJ2-eb-c2b" secondAttribute="bottom" id="cc2-fb-Mnf"/>
                     <constraint firstItem="kok-D3-XOz" firstAttribute="leading" secondItem="USi-0M-HKH" secondAttribute="trailing" constant="5" id="d2b-YM-6Q1"/>
                     <constraint firstItem="y0q-mh-uj8" firstAttribute="leading" secondItem="xZe-kX-cfs" secondAttribute="leading" constant="15" id="eCN-Zo-APU"/>
@@ -89,6 +104,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="delayedImage" destination="koP-d5-y5L" id="N4c-xO-Nmc"/>
                 <outlet property="descLabel" destination="y0q-mh-uj8" id="6rp-QM-Kxo"/>
                 <outlet property="titleLabel" destination="USi-0M-HKH" id="s47-NE-BZk"/>
                 <outlet property="tptLabel" destination="kok-D3-XOz" id="Vr2-Nh-A8k"/>
@@ -98,5 +114,6 @@
     </objects>
     <resources>
         <image name="cross" width="256" height="256"/>
+        <image name="watch" width="256" height="256"/>
     </resources>
 </document>

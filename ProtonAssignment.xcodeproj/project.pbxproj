@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		166F872B3DFBB1F0DA13DE1F /* Pods_ProtonAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */; };
+		BA4634D720A4F3A100D21CFE /* Task+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634D620A4F3A100D21CFE /* Task+Status.swift */; };
+		BA4634D920A5955100D21CFE /* Keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634D820A5955100D21CFE /* Keywords.swift */; };
+		BA4634DB20A5968B00D21CFE /* Keyword+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */; };
 		BA74BD8420A4D60100A8EA8C /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BD8320A4D60100A8EA8C /* Realm.swift */; };
 		BA74BD8820A4D6E900A8EA8C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BD8720A4D6E900A8EA8C /* Task.swift */; };
 		BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */; };
@@ -62,6 +65,9 @@
 		55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA69D6052387D8A4EBC0B72 /* Pods-ProtonAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF14D71C1A4F6507FE4BCFB /* Pods-ProtonAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4634D620A4F3A100D21CFE /* Task+Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Status.swift"; sourceTree = "<group>"; };
+		BA4634D820A5955100D21CFE /* Keywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keywords.swift; sourceTree = "<group>"; };
+		BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyword+Init.swift"; sourceTree = "<group>"; };
 		BA74BD8320A4D60100A8EA8C /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		BA74BD8720A4D6E900A8EA8C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				BA74BD8320A4D60100A8EA8C /* Realm.swift */,
+				BA4634D620A4F3A100D21CFE /* Task+Status.swift */,
+				BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,6 +297,7 @@
 		BAB752DF20A4CE03003C46EB /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				BA4634D820A5955100D21CFE /* Keywords.swift */,
 				BA74BD8720A4D6E900A8EA8C /* Task.swift */,
 			);
 			path = Realm;
@@ -640,9 +649,11 @@
 			files = (
 				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
 				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
+				BA4634D720A4F3A100D21CFE /* Task+Status.swift in Sources */,
 				BA97C2A620A48B5C0098096A /* AddTaskTableViewCell.swift in Sources */,
 				BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */,
 				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
+				BA4634DB20A5968B00D21CFE /* Keyword+Init.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
 				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
 				BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */,
@@ -652,6 +663,7 @@
 				BA7BC4C520A369AF006D7369 /* CompletedTaskTableViewCell.swift in Sources */,
 				BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
+				BA4634D920A5955100D21CFE /* Keywords.swift in Sources */,
 				BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */,
 				BA7BC4C920A39108006D7369 /* AddTaskViewController.swift in Sources */,
 			);
