@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		166F872B3DFBB1F0DA13DE1F /* Pods_ProtonAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */; };
+		BA4634D720A4F3A100D21CFE /* Task+Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634D620A4F3A100D21CFE /* Task+Status.swift */; };
+		BA4634D920A5955100D21CFE /* Keywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634D820A5955100D21CFE /* Keywords.swift */; };
+		BA4634DB20A5968B00D21CFE /* Keyword+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */; };
+		BA74BD8420A4D60100A8EA8C /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BD8320A4D60100A8EA8C /* Realm.swift */; };
+		BA74BD8820A4D6E900A8EA8C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BD8720A4D6E900A8EA8C /* Task.swift */; };
 		BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */; };
 		BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */; };
 		BA7BC4C120A3639F006D7369 /* InProgressTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */; };
@@ -32,6 +37,9 @@
 		BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF120A0CDB000F54870 /* TaskViewController.swift */; };
 		BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */; };
 		BAA92CF820A0D48E00F54870 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */; };
+		BAFC7C7B20A5AEC400949C4D /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7C7A20A5AEC400949C4D /* TaskManager.swift */; };
+		BAFC7C7E20A612CF00949C4D /* Task+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7C7D20A612CF00949C4D /* Task+Utils.swift */; };
+		BAFC7C8220A62BEF00949C4D /* TaskManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC7C8120A62BEF00949C4D /* TaskManagerTest.swift */; };
 		D204D833E8766174FC133019 /* Pods_ProtonAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */; };
 		E805BD24EC710FC22A9E2220 /* Pods_ProtonAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35211D47AA4FEF309EAE27B4 /* Pods_ProtonAssignment.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +68,11 @@
 		55C8900F9477386A3C21FF24 /* Pods_ProtonAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA69D6052387D8A4EBC0B72 /* Pods-ProtonAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF14D71C1A4F6507FE4BCFB /* Pods-ProtonAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4634D620A4F3A100D21CFE /* Task+Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Status.swift"; sourceTree = "<group>"; };
+		BA4634D820A5955100D21CFE /* Keywords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keywords.swift; sourceTree = "<group>"; };
+		BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyword+Init.swift"; sourceTree = "<group>"; };
+		BA74BD8320A4D60100A8EA8C /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		BA74BD8720A4D6E900A8EA8C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BA7BC4BC20A36162006D7369 /* InProgressTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskViewController.swift; sourceTree = "<group>"; };
 		BA7BC4BE20A3639F006D7369 /* InProgressTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressTaskTableViewCell.swift; sourceTree = "<group>"; };
 		BA7BC4BF20A3639F006D7369 /* InProgressTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InProgressTaskTableViewCell.xib; sourceTree = "<group>"; };
@@ -91,6 +104,10 @@
 		BAA92CF120A0CDB000F54870 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		BAA92CF520A0D48E00F54870 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		BAFC7C7A20A5AEC400949C4D /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		BAFC7C7C20A5B3C700949C4D /* ProtonAssignment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProtonAssignment.entitlements; sourceTree = "<group>"; };
+		BAFC7C7D20A612CF00949C4D /* Task+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Utils.swift"; sourceTree = "<group>"; };
+		BAFC7C8120A62BEF00949C4D /* TaskManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTest.swift; sourceTree = "<group>"; };
 		D52A77B1ECE906D5551F961F /* Pods_ProtonAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtonAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonAssignmentUITests/Pods-ProtonAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +152,17 @@
 				DCE3E7294570D153299DDD05 /* Pods-ProtonAssignmentUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA74BD8220A4D60100A8EA8C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA74BD8320A4D60100A8EA8C /* Realm.swift */,
+				BA4634D620A4F3A100D21CFE /* Task+Status.swift */,
+				BA4634DA20A5968B00D21CFE /* Keyword+Init.swift */,
+				BAFC7C7D20A612CF00949C4D /* Task+Utils.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BA7BC4BA20A36130006D7369 /* CompletedTask */ = {
@@ -192,7 +220,11 @@
 		BA8C24BB20A0B982000882B8 /* ProtonAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				BAFC7C7C20A5B3C700949C4D /* ProtonAssignment.entitlements */,
 				BA8C24BC20A0B982000882B8 /* AppDelegate.swift */,
+				BAFC7C7920A5AEA700949C4D /* Managers */,
+				BA74BD8220A4D60100A8EA8C /* Extensions */,
+				BAB752DB20A4CE03003C46EB /* Models */,
 				BAA92CD120A0BDB000F54870 /* Constants */,
 				BAA92CE420A0BF6000F54870 /* Modules */,
 				BAA92CD920A0BF5B00F54870 /* Ressources */,
@@ -203,6 +235,7 @@
 		BA8C24D020A0B984000882B8 /* ProtonAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				BAFC7C8120A62BEF00949C4D /* TaskManagerTest.swift */,
 				BA8C24D120A0B984000882B8 /* ProtonAssignmentTests.swift */,
 				BA8C24D320A0B984000882B8 /* Info.plist */,
 			);
@@ -262,6 +295,31 @@
 				BAA92CF620A0D48E00F54870 /* TaskTableViewCell.xib */,
 			);
 			path = Task;
+			sourceTree = "<group>";
+		};
+		BAB752DB20A4CE03003C46EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAB752DF20A4CE03003C46EB /* Realm */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAB752DF20A4CE03003C46EB /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				BA4634D820A5955100D21CFE /* Keywords.swift */,
+				BA74BD8720A4D6E900A8EA8C /* Task.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		BAFC7C7920A5AEA700949C4D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC7C7A20A5AEC400949C4D /* TaskManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		C45A59893C94ED4A08DC2557 /* Frameworks */ = {
@@ -353,6 +411,12 @@
 				TargetAttributes = {
 					BA8C24B820A0B982000882B8 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					BA8C24CC20A0B984000882B8 = {
 						CreatedOnToolsVersion = 9.3;
@@ -581,6 +645,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProtonAssignment/Pods-ProtonAssignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FilesProvider/FilesProvider.framework",
 				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -589,6 +654,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FilesProvider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -609,16 +675,23 @@
 			files = (
 				BAA92CD820A0BEC500F54870 /* Storyboards.swift in Sources */,
 				BAA92CD720A0BEC500F54870 /* Colors.swift in Sources */,
+				BAFC7C7B20A5AEC400949C4D /* TaskManager.swift in Sources */,
+				BA4634D720A4F3A100D21CFE /* Task+Status.swift in Sources */,
 				BA97C2A620A48B5C0098096A /* AddTaskTableViewCell.swift in Sources */,
 				BAA92CF720A0D48E00F54870 /* TaskTableViewCell.swift in Sources */,
 				BAA92CEB20A0BFA700F54870 /* Images.swift in Sources */,
+				BA4634DB20A5968B00D21CFE /* Keyword+Init.swift in Sources */,
 				BAA92CEC20A0BFA700F54870 /* Strings.swift in Sources */,
 				BAA92CEE20A0CA7E00F54870 /* PageMenuViewController.swift in Sources */,
+				BAFC7C7E20A612CF00949C4D /* Task+Utils.swift in Sources */,
 				BAA92CF220A0CDB000F54870 /* TaskViewController.swift in Sources */,
+				BA74BD8820A4D6E900A8EA8C /* Task.swift in Sources */,
+				BA74BD8420A4D60100A8EA8C /* Realm.swift in Sources */,
 				BA7BC4BD20A36162006D7369 /* InProgressTaskViewController.swift in Sources */,
 				BA7BC4C520A369AF006D7369 /* CompletedTaskTableViewCell.swift in Sources */,
 				BAA92CF020A0CD8F00F54870 /* CompletedTaskViewController.swift in Sources */,
 				BA8C24BD20A0B982000882B8 /* AppDelegate.swift in Sources */,
+				BA4634D920A5955100D21CFE /* Keywords.swift in Sources */,
 				BA7BC4C020A3639F006D7369 /* InProgressTaskTableViewCell.swift in Sources */,
 				BA7BC4C920A39108006D7369 /* AddTaskViewController.swift in Sources */,
 			);
@@ -629,6 +702,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA8C24D220A0B984000882B8 /* ProtonAssignmentTests.swift in Sources */,
+				BAFC7C8220A62BEF00949C4D /* TaskManagerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +868,7 @@
 			baseConfigurationReference = 9AF14D71C1A4F6507FE4BCFB /* Pods-ProtonAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProtonAssignment/ProtonAssignment.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProtonAssignment/Ressources/Info.plist;
@@ -803,7 +878,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.ProtonAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -813,6 +888,7 @@
 			baseConfigurationReference = D53B0D65A52601EE8DBF46BE /* Pods-ProtonAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ProtonAssignment/ProtonAssignment.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProtonAssignment/Ressources/Info.plist;
@@ -822,7 +898,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.ProtonAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

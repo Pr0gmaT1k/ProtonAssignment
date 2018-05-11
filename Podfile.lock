@@ -1,4 +1,5 @@
 PODS:
+  - FilesProvider (0.22.0)
   - PageMenu (2.0.0)
   - Realm (3.1.1):
     - Realm/Headers (= 3.1.1)
@@ -15,6 +16,7 @@ PODS:
   - SwiftLint (0.25.0)
 
 DEPENDENCIES:
+  - FilesProvider
   - PageMenu
   - RealmSwift
   - Reusable (~> 3.0.1)
@@ -23,6 +25,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC CHECKSUMS:
+  FilesProvider: 5781d22b6792d59ac930fc2d62fce31559eeeeb3
   PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
   Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
   RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
@@ -31,6 +34,6 @@ SPEC CHECKSUMS:
   SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 58d66977b47f6247a1a60e15961bba976acd9728
+PODFILE CHECKSUM: 503f3ee5581ce3a02d895a430540d3f41f98b6d8
 
 COCOAPODS: 1.4.0

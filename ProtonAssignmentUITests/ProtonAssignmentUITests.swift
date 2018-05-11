@@ -33,4 +33,21 @@ class ProtonAssignmentUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testOpenCloseAddTask() {
+        let app = XCUIApplication()
+        app.navigationBars["HOMEWORK"].buttons["Add"].tap()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .button).element(boundBy: 1).tap()
+    }
+    
+    /** Scroll over all screen in page menu */
+    func testNavigate() {
+        let scrollViewsQuery = XCUIApplication().scrollViews
+        let emptyElement = scrollViewsQuery.otherElements.containing(.image, identifier:"empty").element
+        emptyElement.swipeLeft()
+        
+        let thereIsNoTaskInProgressElement = scrollViewsQuery.otherElements.containing(.staticText, identifier:"There is no task in progress").element
+        thereIsNoTaskInProgressElement.swipeLeft()
+        emptyElement.swipeRight()
+        thereIsNoTaskInProgressElement.swipeRight()
+    }
 }

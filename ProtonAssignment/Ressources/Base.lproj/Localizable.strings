@@ -7,11 +7,23 @@
 "page_menu_in_progress" = "IN PROGRESS";
 
 // Screen Task
-"taskVC_start_now" = "START NOW";
-"taskVC_start_delayed" = "DELAYED ONE MINUTE";
+"taskVC_start_now" = "START";
+"taskVC_start_delayed" = "DELAYED";
+"taskVC_start_edit" = "EDIT";
+"taskVC_start_remove" = "REMOVE";
 
 // Screen Add Task
-"add_task_name_placeholder" = "Name";
+"add_task_name_placeholder" = "Name *";
 "add_task_desc_placeholder" = "Description";
-"add_taks_file_placeholder" = "File";
+"add_taks_file_placeholder" = "File *";
 "add_taks_addKeyWord_placeholder" = "Add Keyword";
+
+// Empty task
+"pending_task_empty" = "There is no pending task";
+"inprogress_task_empty" = "There is no task in progress";
+"completed_task_empty" = "There is no completed task";
+
+// Task state
+"task_state_completed" = "completed";
+"task_state_failed" = "failed";
+"task_state_cancelled" = "canceled";
