@@ -31,7 +31,10 @@ final class TaskManager {
     
     // MARK:- publlic func
     func lauchTask(task: Task, delayed: Bool) {let url = URL(fileURLWithPath: task.fileUrl)
-        try? realm.write { task.status.value = delayed ? 2 : 3 }
+        try? realm.write {
+            task.status.value = delayed ? 2 : 3
+            task.dateStart = Date()
+        }
         if delayed { // Delayed 1 minute
             DispatchQueue.main.asyncAfter(deadline: .now() + 60) { [weak self] in
                 // break if task change his state
@@ -53,10 +56,6 @@ final class TaskManager {
     }
     
     // MARK:- Private func
-    private func lauchTask(task: Task) {
-        
-    }
-    
     fileprivate func changeTaskState(from operation: FileOperationType, state: Int16) {
         // TODO: found an elegant solution...
         let primaryKey = operation.source.replacingOccurrences(of: "file://", with: "")
@@ -65,6 +64,7 @@ final class TaskManager {
         if task.state == .inProgress {
             try? realm.write {
                 task.status.value = state
+                task.dateEnd = Date()
             }
         }
     }
