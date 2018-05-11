@@ -57,6 +57,12 @@ final class TaskManager {
         }
     }
     
+    func cancelAll() {
+        for progress in self.currentTask {
+            self.cancelTask(task: progress.key)
+        }
+    }
+    
     // MARK:- Private func
     fileprivate func changeTaskState(from operation: FileOperationType, state: Int16) {
         // TODO: found an elegant solution...
