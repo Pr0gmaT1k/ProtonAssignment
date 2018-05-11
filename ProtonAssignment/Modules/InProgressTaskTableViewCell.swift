@@ -8,6 +8,7 @@
 
 import UIKit
 import Reusable
+import RealmSwift
 
 /** Delegate to communicate with controller cancel task event */
 protocol InProgressTaskTableViewCellDelegate: class {
@@ -21,10 +22,18 @@ final class InProgressTaskTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet fileprivate weak var descLabel: UILabel!
     @IBOutlet fileprivate weak var tptLabel: UILabel!
     @IBOutlet fileprivate weak var delayedImage: UIImageView!
+    @IBOutlet fileprivate weak var progress: UIProgressView!
     
     // MARK:- Properties
+    fileprivate var notificationToken: NotificationToken?
+    fileprivate let realm = Realm.safeInstance()
     weak var delegate: InProgressTaskTableViewCellDelegate?
     private var task: Task?
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.progress.progress = 0
+    }
     
     // Public func
     func fill(task: Task) {
@@ -32,6 +41,9 @@ final class InProgressTaskTableViewCell: UITableViewCell, NibReusable {
         self.descLabel.text = task.desc
         self.delayedImage.isHidden = task.state != .delayed 
         self.task = task
+        self.notificationToken = task.observe {[weak self] (changes: ObjectChange) in
+            self?.progress.progress = self?.task?.progress.value ?? 0
+        }
     }
     
     // MARK:- IBActions
