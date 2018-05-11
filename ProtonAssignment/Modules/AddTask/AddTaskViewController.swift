@@ -58,7 +58,7 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
         self.nameTextField.text = task.name
         self.descTextField.text = task.desc
         self.keywords = task.keywords.flatMap { $0.keyword }
-        guard let urlString = task.fileUrl, let url = NSURL.init(string: urlString) else { return }
+        guard let url = NSURL.init(string: task.fileUrl) else { return }
         self.fileURL = url
         self.fileTextField.text = url.lastPathComponent
         self.tableView.reloadData()
@@ -95,7 +95,7 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
         }
         
         guard let name = nameTextField.text,
-            let fileURL = fileURL else { return /* TODO: Throw error */ }
+            let fileURL = fileURL?.path else { return /* TODO: Throw error */ }
         
         // Write
         if let task = self.editTask {
@@ -106,20 +106,19 @@ final class AddTaskViewController: UIViewController, StoryboardBased {
                 for keyword in self.keywords {
                     task.keywords.append(Keywords(keyword: keyword))
                 }
-                task.fileUrl = fileURL.absoluteString
+                task.fileUrl = fileURL
                 realm.add(task, update: true)
                 self.dismiss(animated: true)
             }
         } else {
             // Create
             let task = Task()
-            task.id = Int64(arc4random())
             task.name = name
             task.desc = descTextField.text
             for keyword in self.keywords {
                 task.keywords.append(Keywords(keyword: keyword))
             }
-            task.fileUrl = fileURL.absoluteString
+            task.fileUrl = fileURL
             task.status.value = 1
             try? realm.write {
                 realm.add(task)

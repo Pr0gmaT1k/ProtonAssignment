@@ -11,7 +11,6 @@ final class Task: Object {
     case delayed = "delayed"
     case desc = "desc"
     case fileUrl = "fileUrl"
-    case id = "id"
     case name = "name"
     case status = "status"
     case time = "time"
@@ -25,15 +24,14 @@ final class Task: Object {
   dynamic var dateStart: Date?
   var delayed = RealmOptional<Bool>()
   dynamic var desc: String?
-  dynamic var fileUrl: String?
-  dynamic var id: Int64 = 0
+  dynamic var fileUrl: String = ""
   dynamic var name: String = ""
   var status = RealmOptional<Int16>()
   var time = RealmOptional<Int64>()
   var keywords = List<Keywords>()
 
   override static func primaryKey() -> String? {
-    return "id"
+    return "fileUrl"
   }
 
 }

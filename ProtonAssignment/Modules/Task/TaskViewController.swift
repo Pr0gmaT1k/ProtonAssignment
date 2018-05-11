@@ -80,7 +80,7 @@ extension TaskViewController: TaskTableViewcellDelegate {
     
     func didStartTask(taskTableViewCell: TaskTableViewCell, task: Task?, delayed: Bool) {
         guard let task = task else { return /*TODO: Throw error*/ }
-        try? realm.write { task.status.value = delayed ? 2 : 3 }
+        _ = TaskManager.shared.lauchTask(task: task, delayed: delayed)
     }
     
     func edit(taskTableViewCell: TaskTableViewCell, task: Task?) {

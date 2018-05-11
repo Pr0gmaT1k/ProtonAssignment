@@ -9,7 +9,7 @@
 import UIKit
 import Reusable
 import RealmSwift
-import FileProvider
+import FilesProvider
 
 /** Display and cancel task in progress  */
 final class InProgressTaskViewController: UIViewController, StoryboardBased {
@@ -18,12 +18,11 @@ final class InProgressTaskViewController: UIViewController, StoryboardBased {
     @IBOutlet fileprivate weak var emptyLabel: UILabel!
     
     // MARK:- Properties
+    fileprivate var notificationToken: NotificationToken?
+    fileprivate let realm = Realm.safeInstance()
     fileprivate var tasks = [Task]() {
         didSet { self.tableView.isHidden = tasks.isEmpty }
     }
-    fileprivate var notificationToken: NotificationToken?
-    fileprivate let realm = Realm.safeInstance()
-//    fileprivate let fileProvider = FileManager.
     
     // MARK:- Public func
     override func viewDidLoad() {
@@ -67,6 +66,6 @@ extension InProgressTaskViewController: UITableViewDataSource, UITableViewDelega
 extension InProgressTaskViewController: InProgressTaskTableViewCellDelegate {
     func taskDidCancel(inProgressTaskTVC: InProgressTaskTableViewCell, task: Task?) {
         guard let task = task else { return /*TODO: Throw error*/ }
-        try? realm.write { task.status.value = 4 }
+        TaskManager.shared.cancelTask(task: task)
     }
 }
